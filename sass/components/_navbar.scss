@@ -1,0 +1,60 @@
+nav {
+    top: 0;
+
+    a {
+
+        h2 {
+            font-weight: 700;
+        }
+    }
+
+    div {
+
+        ul {
+
+            li {
+                font-size: $fs-nav-list-item;
+                text-transform: uppercase;
+                margin-inline-end: 30px;
+                font-weight: 500;
+            }
+
+            .dropdown {
+                position: relative;
+
+                button {
+                    text-transform: uppercase;
+                }
+
+                .dropdown-menu {
+                    position: absolute;
+                    border: 0;
+                    margin-block-start: 0;
+                    top: 140%;
+
+                    li {
+                        width: 100%;
+                        border: none;
+
+                        a {
+                            text-transform: none;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn-nav {
+            @extend .btn;
+            height: 4.5em;
+            color: $white;
+            background-color: $brown;
+
+            &:hover {
+                background-color: #be956d;
+                color: $white;
+            }
+        }
+    }
+}

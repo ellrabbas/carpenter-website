@@ -1,0 +1,60 @@
+.about,
+.feature,
+.quote {
+    .box-container {
+        min-height: 400px;
+    }
+
+    .icon-box {
+        width: 60px;
+        height: 60px;
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+    input,
+    select {
+        height: 55px;
+    }
+
+    textarea {
+        height: 94px;
+    }
+
+    .about-title,
+    .feature-title,
+    .quote-title {
+
+        h1 {
+
+            padding-left: 0;
+            position: relative;
+            font-weight: 700;
+        }
+
+        h1::after {
+            content: "";
+            position: absolute;
+            margin-inline-start: 10px;
+            width: 45px;
+            height: 5px;
+            bottom: 0;
+            background: $black;
+        }
+    }
+
+
+    .btn {
+        @extend .btn;
+        color: $white;
+        background-color: $brown;
+
+        &:hover {
+            background-color: #be956d;
+            color: $white;
+        }
+    }
+
+}

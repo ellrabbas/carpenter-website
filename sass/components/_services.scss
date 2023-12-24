@@ -1,0 +1,42 @@
+.zoom-photo .img-fluid {
+    transition: transform 0.5s ease;
+}
+
+.zoom-photo:hover .img-fluid {
+    transform: scale(1.1);
+}
+
+.zoom-photo:not(:hover) .img-fluid {
+    transform: scale(1);
+}
+
+.service-title,
+.projects-title,
+.team-title,
+.testimontial-title {
+    h1 {
+        position: relative;
+        display: inline-block;
+        font-weight: 700;
+    }
+
+    h1::before {
+        content: "";
+        position: absolute;
+        width: 45px;
+        height: 5px;
+        bottom: 0;
+        background: $black;
+        margin-inline-start: -40px;
+    }
+
+    h1::after {
+        content: "";
+        position: absolute;
+        width: 45px;
+        height: 5px;
+        bottom: 0;
+        background: $black;
+        margin-inline-end: -40px;
+    }
+}
